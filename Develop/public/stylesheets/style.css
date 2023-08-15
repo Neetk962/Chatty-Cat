@@ -91,6 +91,7 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .button:hover {
+
     color:rgb(255, 0, 234);
     transition: all 0.3s ease;
 }
