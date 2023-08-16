@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "name": "chatty-cat",
+  "description": "AssignmentsProject 2 Apr-2023 Home Announcements Modules Syllabus Grades11 Zoom Attendance Student Support Career Services Billing Project 2 Due Aug 22 by 12:59am Points 100 Submitting a text entry box Interactive Full-Stack Project Projects play a key role in your journey to becoming a full-stack web developer. As you enter the last phase of the boot camp, you’ll begin to apply for development jobs. If you want to land interviews, your portfolio must feature high-quality deployed examples of your work—and you can use your finished projects for that very purpose.",
+  "version": "1.0.0",
+  "main": ".js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "[]"
+  ],
+  "author": "",
+  "license": "ISC"
+}
