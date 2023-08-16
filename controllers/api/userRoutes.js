@@ -1,6 +1,8 @@
 const router = require('express').Router();
 const { User } =require('../../models');
 
+// GET /api/users
+
 router.post('/', async (req, res) => {
     try {
         const userData = await User.create(req.body);
@@ -9,6 +11,8 @@ router.post('/', async (req, res) => {
             req.session.user_id = userData.id;
             req.session.logged_in = true;
 
+            // Send user data back to the client as confirmation and save the session
+
             res.status(200).json(userData);
         });
     } catch (err) {
@@ -16,22 +20,32 @@ router.post('/', async (req, res) => {
     }
 });
 
+// POST /api/user/login
+
 router.post('/login', async (req, res) => {
     try {
         const userData = await User.findOne({ 
             where: { email: req.body.email } });
+
+            // If the email is not found, send an error message
 
         if (!userData) {
             res.status(400).json({ message: 'Incorrect email or password, please try again' });
             return;
         }
 
+        // If the email is found, verify the password
+
         const validPassword = await userData.checkPassword(req.body.password);
+
+        // If the password is invalid, send an error message
 
         if (!validPassword) {
             res.status(400).json({ message: 'Incorrect email or password, please try again' });
             return;
         }
+
+        // If the password is valid, save the session and send a confirmation message
 
         req.session.save(() => {
             req.session.user_id = userData.id;
@@ -45,6 +59,8 @@ router.post('/login', async (req, res) => {
     }
 });
 
+// POST /api/user/logout
+
 router.post('/logout', (req, res) => {
     if (req.session.logged_in) {
         req.session.destroy(() => {
@@ -53,6 +69,9 @@ router.post('/logout', (req, res) => {
     } else {
         res.status(404).end();
     }
+
+    // If the user is logged in, end the session
+    
 });
 
 module.exports = router;

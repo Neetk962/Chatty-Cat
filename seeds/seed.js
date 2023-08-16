@@ -4,6 +4,8 @@ const { User, Blog } = require('../models');
 const userData = require('./userData.json');
 const blogData = require('./blogData.json');
 
+// This function will bulk create our users and blogs using the data from the json files
+
 const seedDatabase = async () => {
     await sequelize.sync({ force: true });
 
