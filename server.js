@@ -23,6 +23,7 @@ const sess = {
 
 app.use(session(sess));
 
+// creating the handlebars engine
 const hbs = exphbs.create({});
 
 app.engine('handlebars', hbs.engine);
