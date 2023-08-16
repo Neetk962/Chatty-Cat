@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "dependencies": {
     "express": "^4.18.2"
   },
@@ -15,4 +16,29 @@
   ],
   "author": "",
   "license": "ISC"
+=======
+  "name": "botanical-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Chatty-Cat"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "connect-session-sequelize": "^7.0.4",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "express-session": "^1.17.1",
+    "mysql2": "^2.2.5",
+    "sequelize": "^6.3.5"
+}
+>>>>>>> 26bae41ed55a756a4dd8f0c9482b3cb0279124b9
 }
