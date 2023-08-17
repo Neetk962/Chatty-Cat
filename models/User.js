@@ -4,11 +4,15 @@ const sequelize = require('../config/connection');
 const bcrypt = require ('bcrypt');
 //const { timeStamp } = require('console');
 
+// create our User model
+
 class User extends Model{
     checkpassword(loginPw){
         return bcrypt.compareSync(loginPw, this.password);
     }
 }
+
+// define table columns and configuration
 
 User.init(
     {
@@ -37,6 +41,8 @@ User.init(
             }
         }
     },
+
+    // add hooks to hash password before creating or updating user
     {
         hooks:{
             async beforeCreate(newUserData) {

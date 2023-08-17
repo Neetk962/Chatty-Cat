@@ -1,6 +1,8 @@
 const User = require('./user');
 const Blog = require('./Blog');
 
+// create associiations between user and blog
+
 User.hasMany(Blog, {
     foreignKey: 'user_id',
     onDelete: 'CASCADE'

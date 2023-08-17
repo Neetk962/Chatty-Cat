@@ -1,7 +1,11 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
+// create our Blog model
+
 class Blog extends Model {}
+
+// create fields/columns for Blog model
 
 Blog.init(
     {

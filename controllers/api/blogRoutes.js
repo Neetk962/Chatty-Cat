@@ -1,6 +1,8 @@
 const router =require('express').Router();
 const { Blog } =require('../../models');
 
+// get all blogs
+
 router.post('/', async (req, res) => {
     try {
         const newBlog = await Blog.create({
@@ -8,11 +10,15 @@ router.post('/', async (req, res) => {
             user_id: req.session.user_id,
         });
 
+        // if there's an error, catch it and send it back
+
         res.status(200).json(newBlog);
     }   catch (err) {
         res.status(400).json(err);
     }
 });
+
+// update a blog by its 'id' value
 
 router.delete('/:id', async (req, res) => {
     try {
@@ -22,6 +28,8 @@ router.delete('/:id', async (req, res) => {
                 user_id: req.session.user_id,
             },
         });
+
+        // if there's no blog with that id, return an error
 
         if (!blogData) {
             res.status(404).json({ message: 'No blog found with this id!'});
