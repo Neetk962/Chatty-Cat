@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Chatty Cat</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="public/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 <body>
     <nav class="navbar">
@@ -19,7 +19,7 @@
         </div>
         <ul class="navbar__menu"></ul>
         <li class="navbar_item">
-            <a href="./Develop/views/Layouts/main.handlebars" class="navbar__links"> Home </a>
+            <a href="/" class="navbar__links"> Home </a>
         </li>
         <li class="navbar_item">
             <a href="/catbreeds.html" class="navbar__links"> Cat Breeds </a>
@@ -37,11 +37,19 @@
         </li>
     
         <li class="navbar__btn">
-            <a href="/" class="button"> Login </a>
+            <a href="/login" class="button"> Login </a>
         </li>
         <li class="navbar__btn">
             <a href="/" class="button"> Sign up </a>
         </li>
     </nav>
+    <main>
+        <div class="pageBody">
+            {{{ body }}}
+        </div>
+    </main>
+    {{#if logged_in}}
+    <script src="/javascript/logout.js"></script>
+    {{/if}}
 </body>
 </html>
