@@ -87,7 +87,9 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     outline: none;
     border-radius: 4px;
     background: blueviolet;
-    color: rgb(139, 12, 97);
+    color: wheat;
+    /* changed for readability */
+    /* color: rgb(139, 12, 97); */
 }
 
 .button:hover {
