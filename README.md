@@ -2,9 +2,9 @@
 
 ## Chatty Cat is a blog website
 
-**chatty Cat** is a website blog  that one can join to talk to other cat enthusiast about cats, get advise, aske questions and You will need you to sign up, log into, and use your imagination to where the next step will take you.
+**chatty Cat** is a website blog  that one can join to talk to other cat enthusiast about cats, get advise, aske questions. You will need you to sign up, log into, and use your imagination to where the next step will take you.
 
-This website will offer anyone World Wide person to sign up and be part of the cat world. We wanted to offer a blog that is easy to use and filled with lots of advice, fun entertainment. We built this website to help "cat parents" , become part of a group, learn new ideas and expland your knowledge of cats. 
+This website will offer anyone World Wide person to sign up and be part of the cat world. We wanted to offer a blog that is easy to use and filled with lots of advice, fun, and entertainment. We built this website to help "cat parents" become part of a group, learn new ideas and expland their knowledge of cats. 
 
 ### this project will include:
 
@@ -26,8 +26,7 @@ This website will offer anyone World Wide person to sign up and be part of the c
 6. Tammy Bradley
 
 ##### future for this website does iclude a future of cat care, UI updates, and further expanstion. 
-###### We had issues with getting in touch with each other, finding time that works for all of us.  We had some bugs inthe routing that we beleive we have fixes and have tried to have a good prestentation. 
-
+###### We had issues with getting in touch with each other, finding time that works for all of us.  We had some bugs in the routing that we beleive we have fixed to make for a good presentation.
 
 If your are interested in joinging our working team for the 
 Chatty Cats, we do take bribes of coffee or a grade fo 90% or above. 
