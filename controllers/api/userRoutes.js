@@ -20,7 +20,7 @@ router.post('/', async (req, res) => {
     }
 });
 
-// POST /api/user/login
+// POST /api/users/login
 
 router.post('/login', async (req, res) => {
     try {
@@ -59,7 +59,7 @@ router.post('/login', async (req, res) => {
     }
 });
 
-// POST /api/user/logout
+// POST /api/users/logout
 
 router.post('/logout', (req, res) => {
     if (req.session.logged_in) {
