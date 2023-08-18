@@ -27,6 +27,14 @@ Blog.init(
             allowNull: false,
             defaultValue: DataTypes.NOW,
         },
+        blog_data: {
+            type: DataTypes.JSON,
+            allowNull: false,
+            defaultValue: {},
+            get() {
+                return JSON.parse(this.getDataValue('blog_data'));
+            },
+        },
         user_id: {
             type: DataTypes.INTEGER,
             references: {
