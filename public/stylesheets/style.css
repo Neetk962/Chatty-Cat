@@ -120,7 +120,7 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         position: absolute;
         background: rgb(49, 4, 75);
         transition: all 0.5s ease;
-        height: 50vh;
+        /* height: 50vh; */
         z-index: -1;
     }
     .navbar__menu.active {
