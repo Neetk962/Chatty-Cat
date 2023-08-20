@@ -13,6 +13,20 @@ router.get("/", async (req, res) =>{
     }
 });
 
+// get blog by id
+router.get("/:id", async (req, res) =>{
+    try {
+        const blogData = await Blog.findByPk(req.params.id);
+
+        const blog = blogData.get({ plain: true });
+
+        res.status(200).json(blog);
+    } catch (e) {
+        console.log(e);
+        res.status(500).send();
+    }
+});
+
 // post new blog post
 router.post('/', async (req, res) => {
     try {
@@ -30,7 +44,7 @@ router.post('/', async (req, res) => {
     }
 });
 
-// update a blog by its 'id' value
+// delete a blog by its 'id' value
 
 router.delete('/:id', async (req, res) => {
     try {

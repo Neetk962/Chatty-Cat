@@ -18,7 +18,8 @@ const sess = {
         db: sequelize
     }),
     cookie: {
-        maxAge: 60000
+        // set cookie age to 1 day until expiring
+        maxAge: 24 * 60 * 60 * 1000
     }
 };
 
