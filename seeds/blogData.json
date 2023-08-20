@@ -1,1 +1,9 @@
-[]
+[
+    {
+        "name": "this is a cat",
+        "description": "this is a post about a cat",
+        "date_created": "",
+        "blog_data": "this is a post about a cat, not a post about a carbuncle. that is not a cat.",
+        "user_id": "1"
+    }
+]
