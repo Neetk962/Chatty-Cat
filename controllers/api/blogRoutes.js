@@ -2,7 +2,18 @@ const router =require('express').Router();
 const { Blog } =require('../../models');
 
 // get all blogs
+router.get("/", async (req, res) =>{
+    try {
+        const blogs = await Blog.findAll({});
 
+        res.status(200).json(blogs);
+    } catch (e) {
+        console.log(e);
+        res.status(500).send();
+    }
+});
+
+// post new blog post
 router.post('/', async (req, res) => {
     try {
         const newBlog = await Blog.create({
@@ -14,6 +25,7 @@ router.post('/', async (req, res) => {
 
         res.status(200).json(newBlog);
     }   catch (err) {
+        console.log(err);
         res.status(400).json(err);
     }
 });
@@ -25,7 +37,7 @@ router.delete('/:id', async (req, res) => {
         const blogData = await Blog.destroy({
             where: {
                 id: req.params.id,
-                user_id: req.session.user_id,
+                // user_id: req.session.user_id,
             },
         });
 
@@ -38,6 +50,7 @@ router.delete('/:id', async (req, res) => {
 
         res.status(200).json(blogData);
     } catch (err) {
+        console.log(err);
         res.status(500).json(err);
     }
 });
