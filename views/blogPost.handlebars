@@ -1,10 +1,11 @@
-{{#if loggedIn}}
+{{#if logged_in}}
 <section class = "blogPost">
     {{!-- <img src="" alt=""> --}}
     <article class="postBody">
         <h3> {{name}} </h3>
-        <p> Created by: {{user_id}} </p>
+        <a href="/users/{{user_id}}">Created by: {{User.name}}</a>
         <p> Posted on: {{date_created}} </p>
+        <p> Description: {{description}} </p>
         <p> {{blog_data}} </p>
     </article>
 </section>

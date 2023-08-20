@@ -14,6 +14,20 @@ router.get("/", async (req, res) =>{
     }
 });
 
+// get user by id
+router.get("/:id", async (req, res) =>{
+    try {
+        const userData = await User.findByPk(req.params.id);
+
+        const user = userData.get({ plain: true });
+
+        res.status(200).json(user);
+    } catch (e) {
+        console.log(e);
+        res.status(500).send();
+    }
+});
+
 // create new user
 
 router.post('/', async (req, res) => {
