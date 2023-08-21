@@ -31,13 +31,13 @@ router.get('/', async (req, res) => {
 
 // get single blog by id
 
-router.get('/blog/:id', async (req, res) => {
+router.get('/blogs/:id', async (req, res) => {
     try {
         const blogData = await Blog.findByPk(req.params.id, {
             include: [
                 {
                     model: User,
-                    attributes: ['name'],
+                    attributes: ['Username'],
                 },
             ],
         });
@@ -46,7 +46,7 @@ router.get('/blog/:id', async (req, res) => {
 
         const blog = blogData.get({ plain: true });
 
-        res.render('blog', {
+        res.render('blogPost', {
             ...blog,
             logged_in: req.session.logged_in
         });
@@ -55,9 +55,19 @@ router.get('/blog/:id', async (req, res) => {
     }
 });
 
+// post new blog post render
+router.get("/createPost", async (req, res) =>{
+    try {
+        res.render("createPost")
+    } catch (error) {
+        console.log(error);
+        res.status(500).send();
+    }
+});
+
 // use withAuth middleware to prevent access to route
 
-router.get('/profile', withAuth, async (req, res) => {
+router.get('/profile/:id', withAuth, async (req, res) => {
     try {
         const userData = await User.findByPk(req.session.user_id, {
             attributes: { exclude: ['password'] },
