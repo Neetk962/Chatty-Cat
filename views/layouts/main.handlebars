@@ -46,9 +46,16 @@
         {{/if}}
         {{!-- got rid of sign up route due to log in and sign up being on the same page --}}
     </nav>
-    <aside>
+    <aside class="sideBar">
         <h3>Check these posts!</h3>
-        <section></section>
+        <section class="createYourOwn">
+            Upload your own post!
+            {{#if logged_in}}
+            <a href="/createPost" id="createButton"> Make your own </a>
+            {{else}}
+                <a href="/login" class="button"> Login to Post </a>
+            {{/if}}
+        </section>
     </aside>
     <main>
         <div class="pageBody">
