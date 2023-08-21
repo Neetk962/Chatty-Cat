@@ -55,6 +55,9 @@ router.get('/blogs/:id', async (req, res) => {
     }
 });
 
+// post new blog post
+
+
 // use withAuth middleware to prevent access to route
 
 router.get('/profile', withAuth, async (req, res) => {
