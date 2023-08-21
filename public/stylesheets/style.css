@@ -131,6 +131,14 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-color: #e7d9b09c;
 }
 
+.footer {
+    position: fixed;
+    bottom: 0;
+    border-top: 2px;
+    border-color: dimgray;
+    border-style: solid;
+}
+
 #createButton {
     font-size: 14px;
     height: fit-content;

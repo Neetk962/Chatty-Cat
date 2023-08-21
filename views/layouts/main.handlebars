@@ -52,8 +52,6 @@
             Upload your own post!
             {{#if logged_in}}
             <a href="/createPost" id="createButton"> Make your own </a>
-            {{else}}
-                <a href="/login" class="button"> Login to Post </a>
             {{/if}}
         </section>
     </aside>
@@ -62,6 +60,7 @@
             {{{ body }}}
         </div>
     </main>
+    <footer class="footer">Made with ♥ by a team in the U.C.Berkeley Full-Stack bootcamp</footer>
     {{#if logged_in}}
     <script src="/javascript/logout.js"></script>
     {{/if}}

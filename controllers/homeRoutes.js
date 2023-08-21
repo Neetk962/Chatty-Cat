@@ -55,8 +55,15 @@ router.get('/blogs/:id', async (req, res) => {
     }
 });
 
-// post new blog post
-
+// post new blog post render
+router.get("/createPost", async (req, res) =>{
+    try {
+        res.render("createPost")
+    } catch (error) {
+        console.log(error);
+        res.status(500).send();
+    }
+});
 
 // use withAuth middleware to prevent access to route
 
