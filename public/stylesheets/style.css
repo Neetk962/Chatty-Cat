@@ -139,10 +139,22 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 .pageBody {
     display: flex;
     margin-left: 250px;
+    margin-right: 50px;
     padding: 20px;
     background-color: #e7d9b09c;
     flex-wrap: wrap;
     flex-direction: column;
+}
+
+#blogPost {
+    border-color: #9c27b0;
+    border-top: 1px;
+    border-top-color: purple;
+    border-bottom: 0;
+    border-right: 0;
+    border-style: solid;
+    margin: 5px;
+    padding: 3px;
 }
 
 .footer {
