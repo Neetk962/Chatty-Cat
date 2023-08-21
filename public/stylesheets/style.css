@@ -7,7 +7,8 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .navbar {
-    background-color: aqua;
+    /* background-color: aqua; */
+    background: linear-gradient(90deg, rgba(184,184,184,0.700717787114846) 0%, rgba(19,211,233,0.7707457983193278) 31%, rgba(193,122,231,0.577468487394958) 100%);
     height: 80px;
     display: flex;
     justify-content: center;
@@ -132,11 +133,26 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .footer {
+    display: flex;
     position: fixed;
+    width: 100%;
+    justify-content: center;
     bottom: 0;
     border-top: 2px;
     border-color: dimgray;
     border-style: solid;
+    background-color: rgba(218, 165, 32, 0.384);
+}
+
+.textareaContainer {
+    position: relative;
+    padding: 20px;
+}
+
+.textareaContainer label {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 #createButton {
