@@ -6,10 +6,21 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 /* background-color: rgba(245, 222, 179, 0.5); */
 }
 
+#background {
+    /* background-image: url(../images/cat2.jpg);
+    background-repeat: no-repeat;
+    background-position: center; */
+    background: no-repeat center/40% url(../images/cat2.jpg);
+    /* background-size: cover; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .navbar {
     /* background-color: aqua; */
     background: linear-gradient(90deg, rgba(184,184,184,0.700717787114846) 0%, rgba(19,211,233,0.7707457983193278) 31%, rgba(193,122,231,0.577468487394958) 100%);
     height: 80px;
+    font-size: xx-large;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -127,9 +138,13 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .pageBody {
+    display: flex;
     margin-left: 250px;
     padding: 20px;
     background-color: #e7d9b09c;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-end;
 }
 
 .footer {

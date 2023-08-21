@@ -1,9 +1,9 @@
 {{#if logged_in}}
-<section class = "blogPost">
+<section>
     {{!-- <img src="" alt=""> --}}
     <article class="postBody">
         <h3> {{name}} </h3>
-        <a href="/users/{{user_id}}">Created by: {{User.name}}</a>
+        <a href="/users/{{user_id}}">Created by: {{Username}}</a>
         <p> Posted on: {{formatDate date_created}} </p>
         <p> Description: {{description}} </p>
         <p> {{blog_data}} </p>
