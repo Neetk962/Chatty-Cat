@@ -144,7 +144,6 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-color: #e7d9b09c;
     flex-wrap: wrap;
     flex-direction: column;
-    align-content: flex-end;
 }
 
 .footer {
