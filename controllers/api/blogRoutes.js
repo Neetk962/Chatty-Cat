@@ -30,11 +30,16 @@ router.get("/:id", async (req, res) =>{
 // post new blog post
 router.post('/', async (req, res) => {
     try {
+        const user_id = req.session.user_id;
+        const { name, description, date_created, blog_data } = req.body
         const newBlog = await Blog.create({
-            ...req.body,
-            user_id: req.session.user_id,
+            name,
+            description,
+            date_created,
+            blog_data,
+            user_id: user_id,
         });
-
+        console.log(user_id);
         // if there's an error, catch it and send it back
 
         res.status(200).json(newBlog);

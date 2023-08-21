@@ -4,15 +4,15 @@ const postFormHandler = async (event) => {
     const name = document.querySelector('#post-title').value.trim();
     const description = document.querySelector('#description').value.trim();
     const date_created = document.querySelector('#date_created').value.trim();
-    const blogBody = document.querySelector('#post-body').value;
+    const blog_data = document.querySelector('#post-body').value;
 
-    if (name && description && date_created) {
+    if (name && description && date_created && blog_data) {
         const response = await fetch('/api/blogs', {
             method: 'POST',
-            body: JSON.stringify({ name, description, date_created }),
+            body: JSON.stringify({ name, description, date_created, blog_data }),
             headers: { 'Content-Type': 'application/json' },
         })
-        console.log(name, description, date_created);
+        console.log(name, description, date_created, blog_data);
 
         if (response.ok) {
             document.location.replace('/');
