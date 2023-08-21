@@ -34,5 +34,5 @@ Chatty Cats, we do take bribes of coffee or a grade of 90% or above.
 #### Image of our website: https://github.com/Neetk962/Chatty-Cat/assets/131566940/1ae35c75-88c6-41f5-acec-39d8156a43fd
 
 #### Credits
-- https://evade-nextbot.fandom.com/wiki/Popcat for an image
-- 
+- https://evade-nextbot.fandom.com/wiki/Popcat for an image.
+- https://loremipsum.io/ for lorem ipsum text generation.

@@ -10,40 +10,41 @@
     <nav class="navbar">
         <div class="navbar_container">
             <a href="/" id="navbar__logo">Chatty Cat</a>
-            <div class="navbar__toggle" id="mobile-menu"></div>
+            {{!-- <div class="navbar__toggle" id="mobile-menu"></div>
             <span class="bar"></span>
             <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-        <ul class="navbar__menu"></ul>
-        <li class="navbar_item">
-            <a href="/" class="navbar__links"> Home </a>
-        </li>
+            <span class="bar"></span> --}}
+            <ul class="navbar__menu">
+                <li class="navbar_item">
+                    <a href="/" class="navbar__links"> Home </a>
+                </li>
 
-        {{!-- future dev code --}}
-        {{!-- <li class="navbar_item">
-            <a href="/catbreeds.html" class="navbar__links"> Cat Breeds </a>
-        </li>
-            
-        <li class="navbar_item">
-            <a href="/catcare.html" class="navbar__links"> Cat Care </a>
-        </li>
-        
-        <li class="navbar_item">
-            <a href="/favoritebreeds.html" class="navbar__links"> Favorite Breeds </a>
-        </li>
-        <li class="navbar_item">
-            <a href="/randomcatfacts.html" class="navbar__links"> Random Facts </a>
-        </li> --}}
-        {{#if logged_in}}
-        <li class="navbar__btn">
-            <button id="logout" class="button">Logout</button>
-        </li>
-        {{else}}
-        <li class="navbar__btn">
-            <a href="/login" class="button"> Login </a>
-        </li>
-        {{/if}}
+                {{!-- future dev code --}}
+                {{!-- <li class="navbar_item">
+                    <a href="/catbreeds.html" class="navbar__links"> Cat Breeds </a>
+                </li>
+                    
+                <li class="navbar_item">
+                    <a href="/catcare.html" class="navbar__links"> Cat Care </a>
+                </li>
+                
+                <li class="navbar_item">
+                    <a href="/favoritebreeds.html" class="navbar__links"> Favorite Breeds </a>
+                </li>
+                <li class="navbar_item">
+                    <a href="/randomcatfacts.html" class="navbar__links"> Random Facts </a>
+                </li> --}}
+                {{#if logged_in}}
+                <li class="navbar__btn">
+                    <button id="logout" class="button">Logout</button>
+                </li>
+                {{else}}
+                <li class="navbar__btn">
+                    <a href="/login" class="button"> Login </a>
+                </li>
+                {{/if}}
+            </ul>
+        </div>
         {{!-- got rid of sign up route due to log in and sign up being on the same page --}}
     </nav>
     <aside class="sideBar">
