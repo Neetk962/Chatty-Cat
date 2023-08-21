@@ -67,7 +67,7 @@ router.get("/createPost", async (req, res) =>{
 
 // use withAuth middleware to prevent access to route
 
-router.get('/profile', withAuth, async (req, res) => {
+router.get('/profile/:id', withAuth, async (req, res) => {
     try {
         const userData = await User.findByPk(req.session.user_id, {
             attributes: { exclude: ['password'] },
