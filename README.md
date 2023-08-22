@@ -9,7 +9,7 @@ This website will offer anyone World Wide person to sign up and be part of the c
 ### this project will include:
 
 - Api
-- Schema
+- Sequelize
 - Index
 - Handlebars
 - Express
