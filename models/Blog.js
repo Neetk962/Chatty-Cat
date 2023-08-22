@@ -1,14 +1,18 @@
 const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../../config/connection');
+const sequelize = require('../config/connection');
+
+// create our Blog model
 
 class Blog extends Model {}
+
+// create fields/columns for Blog model
 
 Blog.init(
     {
         id: {
             type: DataTypes.INTEGER,
             allowNull: false,
-            PrimaryKey: true,
+            primaryKey: true,
             autoIncrement: true,
         },
         name: {
@@ -23,6 +27,14 @@ Blog.init(
             allowNull: false,
             defaultValue: DataTypes.NOW,
         },
+        blog_data: {
+            type: DataTypes.TEXT,
+            allowNull: false,
+            // defaultValue: {},
+            // get() {
+            //     return JSON.parse(this.getDataValue('blog_data'));
+            // },
+        },
         user_id: {
             type: DataTypes.INTEGER,
             references: {
@@ -36,7 +48,7 @@ Blog.init(
         timestamps: false,
         freezeTableName: true,
         underscored: true,
-        modelName: 'project',
+        modelName: 'blog',
     }
 );
 

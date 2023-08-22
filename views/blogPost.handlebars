@@ -1,13 +1,15 @@
-{{#if loggedIn}}
-<section class = "blogPost">
-    <img src="" alt="">
+{{#if logged_in}}
+<section>
+    {{!-- <img src="" alt=""> --}}
     <article class="postBody">
-        <h3> Post Title Here </h3>
-        <p> Created by: </p>
-        <p> Posted on: </p>
-        <p> Post Text/Body Here </p>
+        <h3> {{name}} </h3>
+        <a href="/profile/{{user_id}}">Created by: {{Username}}</a>
+        <p> Posted on: {{formatDate date_created}} </p>
+        <p> Description: {{description}} </p>
+        <p> {{blog_data}} </p>
     </article>
 </section>
 {{else}}
 {{!-- redirect to login page --}}
+<a href="/login">Please login to view this page. ♥ </a>
 {{/if}}

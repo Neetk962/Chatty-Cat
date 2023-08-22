@@ -2,16 +2,20 @@ const router =require('express').Router();
 const { Blog, User } = require('../models');
 const withAuth = require('../utils/auth');
 
+// get all blogs for homepage
+
 router.get('/', async (req, res) => {
     try {
         const blogData = await Blog.findAll({
             include: [
                 {
                     model: User,
-                    attributes: ['name'],
+                    attributes: ['Username'],
                 },
             ],
         });
+
+        // serialize data so the template can read it
 
         const blogs = blogData.map((blog) => blog.get({
             plain: true }));
@@ -25,20 +29,24 @@ router.get('/', async (req, res) => {
     }
 });
 
-router.get('/blog/:id', async (req, res) => {
+// get single blog by id
+
+router.get('/blogs/:id', async (req, res) => {
     try {
         const blogData = await Blog.findByPk(req.params.id, {
             include: [
                 {
                     model: User,
-                    attributes: ['name'],
+                    attributes: ['Username'],
                 },
             ],
         });
 
+        // serialize data so the template can read it
+
         const blog = blogData.get({ plain: true });
 
-        res.render('blog', {
+        res.render('blogPost', {
             ...blog,
             logged_in: req.session.logged_in
         });
@@ -47,7 +55,19 @@ router.get('/blog/:id', async (req, res) => {
     }
 });
 
-router.get('/profile', withAuth, async (req, res) => {
+// post new blog post render
+router.get("/createPost", async (req, res) =>{
+    try {
+        res.render("createPost")
+    } catch (error) {
+        console.log(error);
+        res.status(500).send();
+    }
+});
+
+// use withAuth middleware to prevent access to route
+
+router.get('/profile/:id', withAuth, async (req, res) => {
     try {
         const userData = await User.findByPk(req.session.user_id, {
             attributes: { exclude: ['password'] },
@@ -64,6 +84,8 @@ router.get('/profile', withAuth, async (req, res) => {
         res.status(500).json(err);
     }
 });
+
+// if user is logged in, redirect to profile page
 
 router.get('/login', (req, res) => {
     if (req.session.logged_in) {

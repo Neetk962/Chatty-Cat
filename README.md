@@ -48,5 +48,3 @@ Protect API keys and sensitive information with environment variables.
 Have a clean repository that meets quality coding standards (file structure, naming conventions, follows best practices for class/id naming conventions, indentation, quality comments, etc.).
 
 Have a quality README (with unique name, description, technologies used, screenshot, and link to deployed application).
-
-Finally, you must add your project to the portfolio that you created in Module 2.
