@@ -19,7 +19,7 @@ p {
     display: flex;
     justify-items: center;
     align-items: center;
-    background: url(IMAGES/img/Homepage_Cat.jpg);
+    background: url(Homepage_Cat.jpg);
     background-size: cover;
 }
 
@@ -242,7 +242,7 @@ section {
 }
 
 .testimonials {
-    background: url(IMAGES/img/TestimonialImg.jpg);
+    background: url(TestimonialImg.jpg);
     background-size: cover;
 }
 
@@ -305,7 +305,7 @@ section {
 }
 
 .contact {
-    background: url(IMAGES/img/ContactImg.jpg);
+    background: url(ContactImg.jpg);
     background-size: cover;
 }
 
@@ -414,14 +414,14 @@ section {
         position: relative;
         width: 40px;
         height: 40px;
-        background: url(IMAGES/img/menu.png);
+        background: url(menu.png);
         background-size: 30px;
         background-repeat: no-repeat;
         background-position: center;
         cursor: pointer;
     }
     .menuToggle.active {
-        background: url(IMAGES/img/close.png);
+        background: url(close.png);
         background-size: 25px;
         background-repeat: no-repeat;
         background-position: center;
