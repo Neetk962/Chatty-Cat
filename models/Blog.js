@@ -28,12 +28,12 @@ Blog.init(
             defaultValue: DataTypes.NOW,
         },
         blog_data: {
-            type: DataTypes.JSON,
+            type: DataTypes.TEXT,
             allowNull: false,
-            defaultValue: {},
-            get() {
-                return JSON.parse(this.getDataValue('blog_data'));
-            },
+            // defaultValue: {},
+            // get() {
+            //     return JSON.parse(this.getDataValue('blog_data'));
+            // },
         },
         user_id: {
             type: DataTypes.INTEGER,

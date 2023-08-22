@@ -2,9 +2,13 @@
 
 ## Chatty Cat is a blog website
 
+<<<<<<< HEAD
 **chatty Cat** is a website blog  that one can join to talk to other cat enthusiast about cats, get advise, and learn about cat breeds. You can contact us to write testimonials and disccusion topics. 
+=======
+**Chatty Cat** is a website blog  that one can join to talk to other cat enthusiast about cats, get advise, ask questions. You will need you to sign up, log into, and use your imagination to where the next step will take you.
+>>>>>>> e969280aa8445860dc5ba0e5a1f3d06aec0a0b5b
 
-This website will offer anyone World Wide person to sign up and be part of the cat world. We wanted to offer a blog that is easy to use and filled with lots of advice, fun, and entertainment. We built this website to help "cat parents" become part of a group, learn new ideas and expland their knowledge of cats. 
+This website will offer anyone World Wide person to sign up and be part of the cat world. We wanted to offer a blog that is easy to use and filled with lots of advice, fun, and entertainment. We built this website to help "cat parents" become part of a group, learn new ideas and expand their knowledge of cats. 
 
 ### this project will include:
 
@@ -16,7 +20,7 @@ This website will offer anyone World Wide person to sign up and be part of the c
 - Env
 
 
-#### Chatty Cat is a website in progress that is a collabiration of ideas and solutions from:
+#### Chatty Cat is a website in progress that is a collaboration of ideas and solutions from:
 
 1. Mikey T
 2. Timothy Reyolds
@@ -25,10 +29,14 @@ This website will offer anyone World Wide person to sign up and be part of the c
 5. Ravneet Kaur
 6. Tammy Bradley
 
-#### future for this website does iclude a future of cat care, UI updates, and further expanstion. 
-#### We had issues with getting in touch with each other, finding time that works for all of us.  We had some bugs in the routing that we beleive we have fixed to make for a good presentation.
+#### Future for this website does include a future of cat care, UI updates, and further expansion. 
+#### We had issues with getting in touch with each other, finding time that works for all of us.  We had some bugs in the routing that we believe we have fixed to make for a good presentation.
 
 If your are interested in joining our working team for the 
 Chatty Cats, we do take bribes of coffee or a grade of 90% or above. 
 
 #### Image of our website: https://github.com/Neetk962/Chatty-Cat/assets/131566940/1ae35c75-88c6-41f5-acec-39d8156a43fd
+
+#### Credits
+- https://evade-nextbot.fandom.com/wiki/Popcat for an image.
+- https://loremipsum.io/ for lorem ipsum text generation.
