@@ -78,6 +78,7 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-decoration:double;
     padding: 0 1rem;
     width: 100%;
+    font-size: x-large;
 }
 
 .navbar__btn {
