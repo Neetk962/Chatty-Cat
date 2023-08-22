@@ -10,10 +10,10 @@
     <nav class="navbar">
         <div class="navbar_container">
             <a href="/" id="navbar__logo">Chatty Cat</a>
-            <div class="navbar__toggle" id="mobile-menu"></div>
+            {{!-- <div class="navbar__toggle" id="mobile-menu"></div>
             <span class="bar"></span>
             <span class="bar"></span>
-            <span class="bar"></span>
+            <span class="bar"></span> --}}
         </div>
         <ul class="navbar__menu"></ul>
         <li class="navbar_item">
@@ -35,18 +35,35 @@
         <li class="navbar_item">
             <a href="/randomcatfacts.html" class="navbar__links"> Random Facts </a>
         </li> --}}
-    
+        {{#if logged_in}}
+        <li class="navbar__btn">
+            <button id="logout" class="button">Logout</button>
+        </li>
+        {{else}}
         <li class="navbar__btn">
             <a href="/login" class="button"> Login </a>
         </li>
+        {{/if}}
+        
         {{!-- got rid of sign up route due to log in and sign up being on the same page --}}
     </nav>
-    
-    <main>
-        <div class="pageBody">
-            {{{ body }}}
-        </div>
-    </main>
+    <aside class="sideBar">
+        <h3>Check these posts!</h3>
+        <section class="createYourOwn">
+            Upload your own post!
+            {{#if logged_in}}
+            <a href="/createPost" id="createButton"> Make your own </a>
+            {{/if}}
+        </section>
+    </aside>
+    <div id="background">
+        <main>
+            <div class="pageBody">
+                {{{ body }}}
+            </div>
+        </main>
+    </div>
+    <footer class="footer">Made with ♥ by a team in the U.C.Berkeley Full-Stack Bootcamp</footer>
     {{#if logged_in}}
     <script src="/javascript/logout.js"></script>
     {{/if}}
