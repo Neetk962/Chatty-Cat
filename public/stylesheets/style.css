@@ -53,6 +53,7 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     cursor: pointer;
     text-decoration: none;
     font-size: 33px;
+    margin-left: 20px;
 }
 
 .fa-gem {
