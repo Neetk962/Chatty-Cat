@@ -1,11 +1,42 @@
 const router = require('express').Router();
 const { User } =require('../../models');
 
-// GET /api/users
+// GET all users
+
+router.get("/", async (req, res) =>{
+    try {
+        const users = await User.findAll({});
+
+        res.status(200).json(users);
+    } catch (e) {
+        console.log(e);
+        res.status(500).send();
+    }
+});
+
+// get user by id
+router.get("/:id", async (req, res) =>{
+    try {
+        const userData = await User.findByPk(req.params.id);
+
+        const user = userData.get({ plain: true });
+
+        res.status(200).json(user);
+    } catch (e) {
+        console.log(e);
+        res.status(500).send();
+    }
+});
+
+// create new user
 
 router.post('/', async (req, res) => {
     try {
-        const userData = await User.create(req.body);
+        const userData = await User.create({
+            Username: req.body.Username,
+            email: req.body.email,
+            password: req.body.password,
+        });
 
         req.session.save(() => {
             req.session.user_id = userData.id;
@@ -16,11 +47,12 @@ router.post('/', async (req, res) => {
             res.status(200).json(userData);
         });
     } catch (err) {
+        console.log(err);
         res.status(400).json(err);
     }
 });
 
-// POST /api/user/login
+// POST /api/users/login
 
 router.post('/login', async (req, res) => {
     try {
@@ -55,11 +87,12 @@ router.post('/login', async (req, res) => {
         });
 
     } catch (err) {
+        console.log(err);
         res.status(400).json(err);
     }
 });
 
-// POST /api/user/logout
+// POST /api/users/logout
 
 router.post('/logout', (req, res) => {
     if (req.session.logged_in) {

@@ -1,11 +1,12 @@
-{{#if loggedIn}}
-<section class = "blogPost">
-    <img src="" alt="">
+{{#if logged_in}}
+<section>
+    {{!-- <img src="" alt=""> --}}
     <article class="postBody">
         <h3> {{name}} </h3>
-        <p> Created by: {{user_id}} </p>
-        <p> Posted on: {{date_created}} </p>
-        <p> Post Text/Body Here </p>
+        <a href="/profile/{{user_id}}">Created by: {{Username}}</a>
+        <p> Posted on: {{formatDate date_created}} </p>
+        <p> Description: {{description}} </p>
+        <p> {{blog_data}} </p>
     </article>
 </section>
 {{else}}

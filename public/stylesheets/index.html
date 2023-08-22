@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Chatty Cats<span>.</span></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+            <li><a href="#banner" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#breed" onclick="toggleMenu()">Breeds</a></li>
+            <li><a href="#testimonials" onclick="toggleMenu()">Testimonials</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+    </header>
+    <section class="banner" id="banner">
+        <div class="content">
+            <h2>Love For Cats</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Consequatur, itaque ut quis perspiciatis impedit, 
+                distinctio sapiente aperiam repellendus error alias obcaecati eius quasi laborum nam! 
+                Reprehenderit labore dolore laborum iste.
+            </p>
+            <!-- <a href="#" class="btn">More</a> -->
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="row">
+            <div class="col50">
+                <h2 class="titleText"><span>W</span>hy We Love Cats</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                    Provident aperiam saepe autem aliquid doloremque beatae! 
+                    Rerum in aut quod quo aliquid dolores nihil amet.
+                </p>
+            </div>
+            <div class="col50">
+                <div class="imgBx">
+                    <img src="About_Cat.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="breed" id="breed">
+        <div class="title">
+            <h2 class="titleText">Different <span>B</span>reeds Of Cats</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, delectus!</p>
+        </div>
+        <div class="content">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="British Shorthair Cat.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>British Shorthair Cats</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="American Shorthair Cat.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>American Shorthair Cats</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="Persian Cat.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Persian Cats</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="Siamese Cat.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Siamese Cats</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="Scottish Cat.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Scottish Cat</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="Norwegian Forest Cat.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Norwegian Forest Cat</h3>
+                </div>
+            </div>
+        </div>
+        <div class="title">
+            <a href="#" class="btn">View More</a>
+        </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+        <div class="title white">
+            <h2 class="titleText">What <span>T</span>hey Said About Their Cats</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, delectus!</p>
+        </div>
+        <div class="content">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="person1.jpg">
+                </div>
+                <div class="text">
+                    <p>My cat is my constant companion. 
+                        No matter how tough my day has been, 
+                        coming home to their purring and affectionate nudges instantly lifts my spirits.
+                    </p>
+                    <h3>Nicole Samson</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="person2.jpg">
+                </div>
+                <div class="text">
+                    <p>My cat is like a furry alarm clock, 
+                        waking me up every morning with gentle nudges 
+                        and a persistent meow. It's impossible to resist 
+                        their demands for breakfast!
+                    </p>
+                    <h3>Amy Brady</h3>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="person3.jpg">
+                </div>
+                <div class="text">
+                    <p>There's something magical about the bond I share with my cat. 
+                        It's as if they understand my moods and are always there to 
+                        provide comfort, whether it's through a soft purr or a cozy cuddle.
+                    </p>
+                    <h3>Bianca Simpson</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="title white">
+            <h2 class="titleText"><span>C</span>ontact Us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, delectus!</p>
+        </div>
+        <div class="contactForm">
+            <h3>Send Message</h3>
+            <div class="inputBox">
+                <input type="text" placeholder="Name">
+            </div>
+            <div class="inputBox">
+                <input type="text" placeholder="Email">
+            </div>
+            <div class="inputBox">
+                <textarea placeholder="Note"></textarea>
+            </div>
+            <div class="inputBox">
+                <input type="submit" value="Send">
+            </div>
+        </div>
+    </section>
+
+    <div class="copyrightText">
+        <p>Copyright 2023 <a href="#">Ravneet Kaur</a>. All Right Reserved</p>
+    </div>
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            const header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+
+        function toggleMenu(){
+            const menuToggle = document.querySelector(".menuToggle");
+            const navigation = document.querySelector(".navigation")
+            menuToggle.classList.toggle("active");
+            navigation.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
