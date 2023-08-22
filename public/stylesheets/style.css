@@ -143,7 +143,7 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     padding: 20px;
     background-color: #e7d9b09c;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: column-reverse;
 }
 
 #blogPost {
