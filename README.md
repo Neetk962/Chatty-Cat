@@ -29,7 +29,7 @@ Use MySQL and the Sequelize ORM for the database.
 
 Have both GET and POST routes for retrieving and adding new data.
 
-Be deployed using Heroku (with data).
+**Chatty Cat** is a website blog  that one can join to talk to other cat enthusiast about cats, get advise, ask questions. You will need you to sign up, log into, and use your imagination to where the next step will take you.
 
 Use at least one new library, package, or technology that we haven’t discussed.
 
@@ -41,7 +41,12 @@ Be interactive (i.e., accept and respond to user input).
 
 Have a folder structure that meets the MVC paradigm.
 
-Include authentication (express-session and cookies).
+1. Mikey T
+2. Timothy Reyolds
+3. Vasu Kantesariya
+4. Chandle Ames
+5. Raveet Kaur
+6. Tammy Bradley
 
 Protect API keys and sensitive information with environment variables.
 
