@@ -28,7 +28,9 @@ This website will offer anyone World Wide person to sign up and be part of the c
 #### future for this website does iclude a future of cat care, UI updates, and further expanstion. 
 #### We had issues with getting in touch with each other, finding time that works for all of us.  We had some bugs in the routing that we beleive we have fixed to make for a good presentation.
 
-If your are interested in joinging our working team for the 
+If your are interested in joining our working team for the 
 Chatty Cats, we do take bribes of coffee or a grade fo 90% or above. 
 
-#### Image of our website: https://github.com/Neetk962/Chatty-Cat/assets/131566940/1ae35c75-88c6-41f5-acec-39d8156a43fd
+ Image of our website: 
+ 
+ 
